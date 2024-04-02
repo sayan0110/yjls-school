@@ -1,39 +1,42 @@
-import React, { useState } from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
+import React from 'react';
 import './navmenu.css';
 
 const NavMenu = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const showSidebar = (event) => {
+        event.preventDefault();
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+    };
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
+    const hideSidebar = (event) => {
+        event.preventDefault();
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
     };
 
     return (
-        <div className="hamburger-menu">
-            <button className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-                <span className="line"></span>
-                <span className="line"></span>
-                <span className="line"></span>
-            </button>
-            {isOpen && (
-                <div className="menu">
-                    <div className="menu-item">
-                        <p>Home</p>
-                    </div>
-                    <div className="menu-item">
-                        <p>About</p>
-                    </div>
-                    <div className="menu-item">
-                        <p>Courses</p>
-                    </div>
-                    <div className="menu-item">
-                        <p>Why Us</p>
-                    </div>
-                    <div className="menu-item">
-                        <p>Contact Us</p>
-                    </div>
-                </div>
-            )}
+        <div>
+            <nav>
+                <ul className="sidebar">
+                    <li onClick={hideSidebar}><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" /></svg></a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Why Us</a></li>
+                    <li><a href="">Reviews</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Yume Japanese Language School</a></li>
+                    <li className="hideOnMobile"><a href="">About</a></li>
+                    <li className="hideOnMobile"><a href="">Courses</a></li>
+                    <li className="hideOnMobile"><a href="">Why Us</a></li>
+                    <li className="hideOnMobile"><a href="">Reviews</a></li>
+                    <li className="hideOnMobile"><a href="">Contact Us</a></li>
+                    <li className="menu-button" onClick={showSidebar}><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" /></svg></a></li>
+                </ul>
+            </nav>
         </div>
     );
 };
