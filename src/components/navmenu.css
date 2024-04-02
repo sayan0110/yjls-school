@@ -5,6 +5,8 @@
     width: auto;
     z-index: 5;
     background-color: gainsboro;
+    left: 0;
+    top: 0;
 }
 
 .hamburger {
