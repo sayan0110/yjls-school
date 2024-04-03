@@ -22,7 +22,7 @@ export default function CardSlider() {
         autoplaySpeed: 5000,
         pauseOnHover: true
     };
-    
+
     return (
         <div className="slider-container">
             <Slider {...settings}>
