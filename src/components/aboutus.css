@@ -1,0 +1,34 @@
+
+.about-container {
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.about-container>h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.about-container>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.about-container>p {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+}
