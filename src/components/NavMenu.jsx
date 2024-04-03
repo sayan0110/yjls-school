@@ -32,7 +32,8 @@ const NavMenu = () => {
                 <ul>
                     <li className="site-name">
                         <img className="logo" src={Logo} alt='logo'></img>
-                        <a href="">Yume Japanese Language School</a></li>
+                        <a href="">Yume Japanese Language School</a>
+                    </li>
                     <li className="hideOnMobile"><a href="">About</a></li>
                     <li className="hideOnMobile"><a href="">Courses</a></li>
                     <li className="hideOnMobile"><a href="">Why Us</a></li>
