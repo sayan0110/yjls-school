@@ -6,16 +6,16 @@
     place-items: center;
     width: 80%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .about-container>h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: clamp(24px, 4vw, 30px);
     font-weight: 600;
-    padding: 11px;
-    margin-top: 5px;
+    padding: 10px;
 }
 
 .about-container>span {
@@ -29,8 +29,9 @@
 }
 
 .about-container>p {
+    color: rgba(0, 0, 0, 0.75);
     display: flex;
     text-align: center;
-    font-size: 23px;
-    line-height: 30px;
+    font-size: clamp(16px, 4vw, 20.5px);
+    margin-bottom: 5px;
 }
