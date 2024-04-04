@@ -1,8 +1,8 @@
 import React from 'react';
 import NavMenu from './components/NavMenu';
-// import CardSlider from './components/CardSlider';
 import Banner from './components/Banner';
 import AboutUs from './components/AboutUs';
+import CardSlider from './components/CardSlider';
 
 export default function App() {
     return (
@@ -10,7 +10,7 @@ export default function App() {
             <NavMenu />
             <Banner />
             <AboutUs />
-            {/* <CardSlider /> */}
+            <CardSlider />
         </>
     );
 }

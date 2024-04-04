@@ -10,13 +10,49 @@ import cardImage3 from '../A_media/cardImage3.jpg';
 import cardImage4 from '../A_media/cardImage4.jpg';
 import cardImage5 from '../A_media/cardImage5.jpg';
 
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{
+                ...style,
+                display: "block",
+                background: "#7a7a7a45",
+                right: "-40px",
+                borderRadius: "50%",
+            }}
+            onClick={onClick}
+        />
+    );
+}
+
+function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{
+                ...style,
+                display: "block",
+                background: "#7a7a7a45",
+                left: "-40px",
+                borderRadius: "50%",
+            }}
+            onClick={onClick}
+        />
+    );
+}
+
 export default function CardSlider() {
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
         swipeToSlide: true,
         autoplay: true,
         autoplaySpeed: 5000,

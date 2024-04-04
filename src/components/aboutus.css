@@ -14,21 +14,23 @@
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    padding: 10px;
+    padding: 11px;
+    margin-top: 5px;
 }
 
 .about-container>span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 2px;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 40px;
+    width: 40px;
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 35px;
 }
 
 .about-container>p {
     display: flex;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
+    line-height: 30px;
 }
