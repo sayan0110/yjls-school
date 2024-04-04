@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import AboutUs from './components/AboutUs';
 import CardSlider from './components/CardSlider';
 import WhyChooseUs from './components/WhyChooseUs';
+import Review from './components/Reviews/Review';
 
 export default function App() {
     return (
@@ -13,6 +14,7 @@ export default function App() {
             <AboutUs />
             <CardSlider />
             <WhyChooseUs />
+            <Review />
         </>
     );
 }
