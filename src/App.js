@@ -5,7 +5,7 @@ import AboutUs from './components/AboutUs';
 import CardSlider from './components/CardSlider';
 import WhyChooseUs from './components/WhyChooseUs';
 import Review from './components/Reviews/Review';
-// import Tabbar from './components/Tabbar';
+import Tabbar from './components/Tabbar';
 
 export default function App() {
     return (
@@ -14,7 +14,7 @@ export default function App() {
             <Banner />
             <AboutUs />
             <CardSlider />
-            {/* <Tabbar /> */}
+            <Tabbar />
             <WhyChooseUs />
             <Review />
         </>
