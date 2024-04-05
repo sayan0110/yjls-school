@@ -1,0 +1,109 @@
+.popup {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: grid;
+  /* align-items: center; */
+  /* justify-content: center; */
+  place-content: center;
+  /* background-color: transparent; */
+  backdrop-filter: blur(5px);
+  z-index: 10000;
+  background-color: rgba(61, 53, 53, 0.8);
+}
+.popups {
+  display: none;
+}
+.popup.open {
+  display: block;
+}
+.offers {
+  /* position: absolute; */
+  border: 2px solid black;
+  padding: 3vw;
+  height: 40vh;
+  width: 40vw;
+  text-align: center;
+  background-color: rgb(233, 217, 166 , 0.9);
+  border-radius: 10px;
+}
+.offers h4 {
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+.offers h1 {
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  line-height: 6vh;
+  margin-bottom: 3.9vh;
+}
+
+.offers h3 {
+  font-size: 1vw;
+  margin-bottom: 3vh;
+}
+
+.offers button {
+  position: absolute;
+}
+button {
+  /* position: absolute; */
+  /* font-size: 3vw; */
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  background: transparent;
+  border: none;
+  width: 4vw;
+  height: 4vh;
+  top: 0.4vh;
+  left: 43.9vw;
+  /* font-weight: lighter; */
+  cursor: pointer;
+}
+button > img {
+  color: rgb(0, 0, 0);
+  height: 4vh;
+  position: absolute;
+  z-index: 10000;
+  top: 25vh;
+  left: 26.5vw;
+}
+button:hover {
+  background-color: red;
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .popup {
+    height: 100vh;
+    width: 100vw;
+  }
+  .offers {
+    height: 50vh;
+    width: 70vw;
+    padding: 5vw;
+  }
+  .offers h4 {
+    font-size: 3vw;
+    padding-top: 4vh;
+  }
+  .offers h1 {
+    font-size: 7vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  .offers h3 {
+    font-size: 3vw;
+  }
+  button {
+    font-size: 7vw;
+    left: 72vw;
+    cursor: pointer;
+    width: 5.5vw;
+    font-weight: 500;
+  }
+  button:hover {
+    background-color: red;
+  }
+}
