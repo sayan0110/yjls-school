@@ -83,8 +83,8 @@ const Review = () => {
     return (
         <Container id='client'>
             <Slide direction="left">
-                <span className="green">Reviews</span>
-                <h1>what people says</h1>
+                <span className="review">Reviews</span>
+                <h1 className="review-des">what people says</h1>
             </Slide>
             <Testimonials>
                 <Slider ref={arrowRef} {...settings}>
@@ -115,16 +115,17 @@ const Container = styled.div`
         width: 90%;
     }
 
-    span{
-        font-size: 1.3rem;
+    .review{
         font-weight: 600;
+        color: rgba(51, 51, 51, 0.95);
+        font-size: clamp(1rem, 4vw, 1.3rem);
         text-transform: capitalize;
     }
 
-    h1{
-        color: rgba(51, 51, 51, 0.95);
-        padding-top: 1rem;
+    .review-des{
+        font-size: clamp(1rem, 4vw, 2rem);
         text-transform: capitalize;
+        margin-top: 8px;
     }
 
     .slick-list, .slick-slider, .slick-track{

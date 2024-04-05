@@ -1,28 +1,22 @@
 .why-choose-us-section {
     display: flex;
     margin: 0 auto;
-    width: 80%;
-    padding-bottom: 40px;
+    width: 70%;
+    margin-top: 80px;
 }
 
-.section-title {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #333;
-    font-size: clamp(24px, 4vw, 30px);
-    font-weight: bolder;
-    margin-top: 100px;
-    margin-bottom: 13px;
+.why {
+    font-weight: 600;
+    color: rgba(51, 51, 51, 0.95);
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    text-transform: capitalize;
 }
 
-.container>span {
-    display: flex;
-    margin: 0 auto;
-    width: 40px;
-    height: 1.5px;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 60px;
+.why-des {
+    font-size: clamp(1rem, 4vw, 2rem);
+    text-transform: capitalize;
+    margin-top: 8px;
+    margin-bottom: 25px;
 }
 
 .feature-list {
@@ -34,9 +28,9 @@
 .feature-item {
     display: grid;
     place-items: center;
-    background: linear-gradient(#D7D0D3, white);
+    background: linear-gradient(white, #D7D0D3);
     flex: 0 0 calc(33.33% - 7rem);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 2.5rem;
     margin: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -47,7 +41,7 @@
     font-size: clamp(15px, 3.5vw, 17.5px);
     font-weight: 600;
     color: rgba(51, 51, 51, 0.95);
-    margin-bottom: 12px;
+    margin-bottom: 0.5rem;
 }
 
 .feature-item p {
@@ -59,4 +53,10 @@
 .feature-item:hover {
     transform: translateY(-1px);
     box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2), 15px 15px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 0.7rem;
 }
