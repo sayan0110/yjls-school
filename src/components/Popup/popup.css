@@ -3,10 +3,7 @@
   width: 100vw;
   position: fixed;
   display: grid;
-  /* align-items: center; */
-  /* justify-content: center; */
   place-content: center;
-  /* background-color: transparent; */
   backdrop-filter: blur(5px);
   z-index: 10000;
   background-color: rgba(61, 53, 53, 0.8);
@@ -18,13 +15,14 @@
   display: block;
 }
 .offers {
-  /* position: absolute; */
-  border: 2px solid black;
+  display: grid;
+  place-content: center;
+  border: 2px solid white;
   padding: 3vw;
   height: 40vh;
   width: 40vw;
   text-align: center;
-  background-color: rgb(233, 217, 166 , 0.9);
+  background-color: #D7D0D3;
   border-radius: 10px;
 }
 .offers h4 {
@@ -50,16 +48,12 @@
   position: absolute;
 }
 .close-btn {
-  /* position: absolute; */
-  /* font-size: 3vw; */
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   background: transparent;
   border: none;
   width: 4vw;
   height: 4vh;
   top: 0.4vh;
   left: 43.9vw;
-  /* font-weight: lighter; */
   cursor: pointer;
 }
 .close-btn > img {
