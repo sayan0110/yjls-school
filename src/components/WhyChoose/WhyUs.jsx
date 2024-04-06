@@ -112,4 +112,6 @@ const Cards = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 4rem;
   gap: 1rem;
+  place-content: center;
+  align-items: center;
 `;

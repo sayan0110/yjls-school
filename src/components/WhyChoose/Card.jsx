@@ -28,6 +28,6 @@ const Container = styled.div`
     }
 
     p{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 `

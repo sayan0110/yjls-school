@@ -6,7 +6,7 @@
   place-content: center;
   backdrop-filter: blur(5px);
   z-index: 10000;
-  background-color: rgba(61, 53, 53, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .popups {
   display: none;
