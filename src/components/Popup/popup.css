@@ -17,13 +17,14 @@
 .offers {
   display: grid;
   place-content: center;
-  border: 2px solid white;
+  align-items: center;
+  text-align: center;
+  border: 3px solid white;
   padding: 3vw;
   height: 40vh;
   width: 40vw;
-  text-align: center;
   background-color: #D7D0D3;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .offers h4 {
   font-size: 2vw;
