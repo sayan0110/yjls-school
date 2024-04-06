@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './tabbar.css';
 
+import { Slide } from 'react-awesome-reveal';
+
 const Tabbar = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [lineStyle, setLineStyle] = useState({});
@@ -21,6 +23,10 @@ const Tabbar = () => {
 
     return (
         <div className="tabbar-section">
+            <Slide direction="down">
+                <span className="course">Courses</span>
+                <h1 className="course-des">what Certificates We Offer</h1>
+            </Slide>
             <div className="tabbar-container">
                 <div className="tab_box">
                     <button className={`tab_btn ${activeTab === 0 ? 'active' : ''}`} onClick={() => handleTabClick(0)}>JLPT N5</button>

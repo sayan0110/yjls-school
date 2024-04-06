@@ -82,7 +82,7 @@ const Review = () => {
     ))
     return (
         <Container id='client'>
-            <Slide direction="left">
+            <Slide direction="down">
                 <span className="review">Reviews</span>
                 <h1 className="review-des">what people says</h1>
             </Slide>
@@ -167,14 +167,14 @@ const Testimonials = styled.div`
 `
 const Buttons = styled.div`
     position: absolute;
-    right: 0.7rem;
+    right: 1rem;
     bottom: -2rem;
 
     .btn-slick{
         background-color: transparent;
-        margin-left: 0.5rem;
+        margin-left: 0.5em;
         border: none;
-        color: #D7D0D3;
+        color: rgba(51, 51, 51, 0.85);
         cursor: pointer;
         font-size: 1.1rem;
     }

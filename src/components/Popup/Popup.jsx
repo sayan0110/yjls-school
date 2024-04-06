@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import close from "../../A_media/close.png";
 import "./popup.css";
+
+import close from "../A_media/close.png";
 
 function Popup(props) {
   const [isOpen, setIsOpen] = useState(true);

@@ -6,7 +6,7 @@ import { Slide } from 'react-awesome-reveal';
 export default function AboutUs() {
     return (
         <div className="about-container">
-            <Slide direction="left">
+            <Slide direction="down">
                 <span className="about">About us</span>
                 <h1 className="about-des">who we are</h1>
             </Slide>
