@@ -46,10 +46,10 @@
   margin-bottom: 3vh;
 }
 
-.offers button {
+.offers .close-btn {
   position: absolute;
 }
-button {
+.close-btn {
   /* position: absolute; */
   /* font-size: 3vw; */
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
@@ -62,7 +62,7 @@ button {
   /* font-weight: lighter; */
   cursor: pointer;
 }
-button > img {
+.close-btn > img {
   color: rgb(0, 0, 0);
   height: 4vh;
   position: absolute;
@@ -70,7 +70,7 @@ button > img {
   top: 25vh;
   left: 26.5vw;
 }
-button:hover {
+.close-btn:hover {
   background-color: red;
   color: black;
 }
@@ -96,14 +96,14 @@ button:hover {
   .offers h3 {
     font-size: 3vw;
   }
-  button {
+  .close-btn {
     font-size: 7vw;
     left: 72vw;
     cursor: pointer;
     width: 5.5vw;
     font-weight: 500;
   }
-  button:hover {
+  .close-btn:hover {
     background-color: red;
   }
 }

@@ -91,10 +91,10 @@ const Review = () => {
                     {reviewDisc}
                 </Slider>
                 <Buttons>
-                    <button
+                    <button className="btn-slick"
                         onClick={() => arrowRef.current.slickPrev()}
                     ><IoIosArrowBack /></button>
-                    <button
+                    <button className="btn-slick"
                         onClick={() => arrowRef.current.slickNext()}
                     ><IoIosArrowForward /></button>
                 </Buttons>
@@ -170,7 +170,7 @@ const Buttons = styled.div`
     right: 0.7rem;
     bottom: -2rem;
 
-    button{
+    .btn-slick{
         background-color: transparent;
         margin-left: 0.5rem;
         border: none;
