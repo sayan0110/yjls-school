@@ -15,7 +15,7 @@ import Test from '../A_media/whyChooseUs_icons/test.png';
 const WhyUs = () => {
   return (
     <Container id="service">
-      <Slide direction="left">
+      <Slide direction="down">
         <span className="wha">Why Us</span>
         <h1 className="wha-des">Reason For Choosing</h1>
       </Slide>
@@ -128,4 +128,4 @@ const Cards = styled.div`
   gap: 1rem;
   place-content: center;
   align-items: center;
-`;
+`

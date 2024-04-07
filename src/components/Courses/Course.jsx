@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './tabbar.css';
+import './course.css';
 
 import { Slide } from 'react-awesome-reveal';
 
-const Tabbar = () => {
+const Course = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [lineStyle, setLineStyle] = useState({});
 
@@ -59,4 +59,4 @@ const Tabbar = () => {
     );
 }
 
-export default Tabbar;
+export default Course;
