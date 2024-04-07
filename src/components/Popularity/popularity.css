@@ -4,8 +4,8 @@
     margin: 0 auto;
     width: 60%;
     height: auto;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .pop-box {
@@ -15,10 +15,9 @@
     height: auto;
 }
 
-.pop-logo>img {
-    opacity: 0.7;
-    width: 3rem;
-    height: auto;
+.pop-logo {
+    color: gold;
+    transform: scale(1.5);
 }
 
 .pop-box>h1 {

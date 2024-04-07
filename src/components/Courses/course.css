@@ -50,8 +50,7 @@
 }
 
 .tab_box .tab_btn.active {
-    /* color: #7360ff; */
-    color: yellowgreen;
+    color: gold;
 }
 
 .content_box {
@@ -90,7 +89,7 @@
     left: 17px;
     width: 90px;
     height: 5px;
-    background-color: greenyellow;
+    background-color: gold;
     border-radius: 10px;
     transition: all 0.1s ease-in-out;
 }

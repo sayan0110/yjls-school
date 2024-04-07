@@ -35,9 +35,13 @@
 .social-media div {
     width: 30px;
     height: 30px;
-    background-color: #333;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.social-media div :hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-image {
@@ -68,16 +72,49 @@
 
 .developer-details {
     margin-top: 40px;
+    display: grid;
+    place-content: center;
 }
 
 .quick-details>div {
     font-size: 0.95rem;
     color: rgba(0, 0, 0, 0.8);
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .developer-details>div {
+    display: flex;
     font-size: 0.95rem;
     color: rgba(0, 0, 0, 0.8);
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.developer-details>div:hover {
+    text-decoration: underline;
+}
+
+.developer-details>div>img {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+}
+
+.developer-details>div>p {
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+.detail {
+    display: flex;
+}
+
+.detail > p {
+    padding-top: 4px;
+    padding-left: 8px;
+}
+
+.location-onClick:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }

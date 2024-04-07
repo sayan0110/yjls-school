@@ -1,16 +1,16 @@
 import React from "react";
 import './popularity.css';
 
-import Happy from '../A_media/popularity-icon/happy.png';
-import Rate from '../A_media/popularity-icon/rating.png';
-import Classes from '../A_media/popularity-icon/class.png';
+import Diversity1Icon from '@mui/icons-material/Diversity1';
+import StarBorderPurple500Icon from '@mui/icons-material/StarBorderPurple500';
+import SchoolIcon from '@mui/icons-material/School';
 
 export default function Popularity() {
     return (
         <div className="pop-container">
             <div className="pop-box">
                 <div className="pop-logo">
-                    <img src={Happy} alt="popularity-icon"></img>
+                    <Diversity1Icon />
                 </div>
                 <h1>200+</h1>
                 <p>Happy Students</p>
@@ -18,7 +18,7 @@ export default function Popularity() {
 
             <div className="pop-box">
                 <div className="pop-logo">
-                    <img src={Rate} alt="popularity-icon"></img>
+                    <StarBorderPurple500Icon />
                 </div>
                 <h1>50+</h1>
                 <p>5 Star Rating</p>
@@ -26,7 +26,7 @@ export default function Popularity() {
 
             <div className="pop-box">
                 <div className="pop-logo">
-                    <img src={Classes} alt="popularity-icon"></img>
+                    <SchoolIcon />
                 </div>
                 <h1>100+</h1>
                 <p>Lecture Classes</p>
