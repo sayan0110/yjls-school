@@ -5,7 +5,7 @@ const Card = (props) => {
     const { Icon, disc, title } = props;
   return (
     <Container>
-        <span className='green'>{Icon}</span>
+        <span className="green">{Icon}</span>
         <h1>{title}</h1>
         <p>{disc}</p>
     </Container>
@@ -17,7 +17,7 @@ export default Card;
 const Container = styled.div`
     width: 100%;
     padding: 1rem;
-    text-align: center;
+    
     span{
         font-size: 4rem;
     }

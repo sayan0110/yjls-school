@@ -1,0 +1,37 @@
+.pop-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    margin-top: 130px;
+    margin-bottom: 120px;
+}
+
+.pop-box {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.pop-logo>img {
+    opacity: 0.7;
+    width: 3rem;
+    height: auto;
+}
+
+.pop-box>h1 {
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 1.5px;
+}
+
+.pop-box>p {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
