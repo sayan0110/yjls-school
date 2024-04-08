@@ -22,6 +22,7 @@
 }
 
 .tabbar-container {
+    background: white;
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -86,6 +87,12 @@
 .content_box .content h2 {
     margin-top: 20px;
     margin-bottom: 10px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content_box .content p {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;

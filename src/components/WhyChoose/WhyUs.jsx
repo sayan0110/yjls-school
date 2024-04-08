@@ -118,8 +118,8 @@ const Container = styled.div`
   }
 
   .wha-img {
-    width: 3rem;
-    height: 3rem;
+    width: 5rem;
+    height: auto;
   }
 `;
 

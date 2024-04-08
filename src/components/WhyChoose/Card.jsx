@@ -17,7 +17,7 @@ export default Card;
 const Container = styled.div`
     width: 100%;
     padding: 1rem;
-    
+    background: white;
     span{
         font-size: 4rem;
     }

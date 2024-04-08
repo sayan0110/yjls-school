@@ -23,7 +23,9 @@
 }
 
 .about-container>p {
-    color: rgba(0, 0, 0, 0.75);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: flex;
     text-align: left;
     font-size: clamp(16px, 4vw, 20.5px);

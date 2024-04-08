@@ -10,6 +10,8 @@ import Popularity from "./components/Popularity/Popularity";
 import WhyUs from "./components/WhyChoose/WhyUs";
 import Footer from "./components/Footer/Footer";
 
+import Bg1 from './components/A_media/Background/site-bg1.jpg';
+
 const borderStyle = {
   display: "flex",
   alignItems: "center",
@@ -53,7 +55,8 @@ export default function App() {
 
   return (
     <>
-      <Popup />
+      <img className="bg1" src={Bg1} alt="bg"></img>
+      {/* <Popup /> */}
       <NavMenu />
       <Banner />
       <AboutUs />
@@ -63,7 +66,7 @@ export default function App() {
 
       <div style={borderStyle}></div>
       <WhyUs />
-      
+
       <div style={borderStyle}></div>
       <Popularity />
 
