@@ -56,7 +56,7 @@ export default function App() {
   return (
     <>
       <img className="bg1" src={Bg1} alt="bg"></img>
-      <Popup />
+      {/* <Popup /> */}
       <NavMenu />
       <Banner />
       <AboutUs />
