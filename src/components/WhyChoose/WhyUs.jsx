@@ -104,7 +104,9 @@ const Container = styled.div`
 
   .wha{
     font-weight: 600;
-    color: rgba(51, 51, 51, 0.95);
+    background-image: linear-gradient(to right, #ffd194, #d1913c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: clamp(1rem, 4vw, 1.3rem);
     text-transform: capitalize;
   }

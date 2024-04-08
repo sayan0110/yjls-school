@@ -8,7 +8,7 @@ import { Slide } from 'react-awesome-reveal';
 let reviews = [
     {
         name: "Pancham Sardar",
-        img_url: "https://lh3.googleusercontent.com/a/ACg8ocJ4g-AroaXPQUpWEAWEtwvFGnNrz7RzLuuNDW4d9I33Vhy8Lf1s=s360-c-no",
+        img_url: "https://lh3.googleusercontent.com/a/ACg8ocJ4g-AroaXPQUpWEAWEtwvFGnNrz7RzLuuNDW4d9I33Vhy8Lf1s=s96-c-rg-br100",
         stars: 5,
         disc: `Attending this Japanese language school was a fantastic decision due to its friendly environment and supportive staff, making it easy to connect with fellow students and practice speaking Japanese.It is great way to start my carrer.`
     },
@@ -117,7 +117,9 @@ const Container = styled.div`
 
     .review{
         font-weight: 600;
-        color: rgba(51, 51, 51, 0.95);
+        background-image: linear-gradient(to right, #ffd194, #d1913c);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: clamp(1rem, 4vw, 1.3rem);
         text-transform: capitalize;
     }

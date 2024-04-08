@@ -74,7 +74,7 @@ const Footer = styled.div`
     }
 
     h1{
-        color: rgba(0, 0, 0, 0.85);
+        color: rgba(0, 0, 0, 0.8);
         font-size: 1.2rem;
         font-weight: 700;
         margin-bottom: 10px;
@@ -85,5 +85,6 @@ const Footer = styled.div`
             font-size: 0.9rem;
         }
     }
+
 
 `

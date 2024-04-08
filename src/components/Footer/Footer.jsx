@@ -56,7 +56,7 @@ export default function Footer() {
                 <h4>Devolopers</h4>
 
                 <div onClick={() => window.open("https://www.linkedin.com/in/pancham-sardar-6a466227b/", "_blank")}>
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJ4g-AroaXPQUpWEAWEtwvFGnNrz7RzLuuNDW4d9I33Vhy8Lf1s=s360-c-no" alt="profile-img"></img>
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJ4g-AroaXPQUpWEAWEtwvFGnNrz7RzLuuNDW4d9I33Vhy8Lf1s=s96-c-rg-br100" alt="profile-img"></img>
                     <p>Pancham Sardar</p>
                 </div>
 
