@@ -41,28 +41,28 @@ export default function Footer() {
                     <p onClick={() => window.open("https://maps.app.goo.gl/Z2293XaPZV6DgQE96", "_blank")}>Mali Pukria, near IILDS Hospital, Rajpur Sonarpur, Kolkata, Mali Pukuria, West Bengal 700150</p>
                 </div>
 
-                <div className="detail" onClick={() => window.location.href = 'tel:8013072585'}>
+                <div className="detail">
                     <ContactsIcon />
-                    <p>80130 72585</p>
+                    <p onClick={() => window.location.href = 'tel:8013072585'}>80130 72585</p>
                 </div>
 
-                <div className="detail" onClick={() => window.location.href = 'mailto:Yumejapaneseschool@gmail.com'}>
+                <div className="detail">
                     <EmailIcon />
-                    <p>Yumejapaneseschool@gmail.com</p>
+                    <p onClick={() => window.location.href = 'mailto:Yumejapaneseschool@gmail.com'}>Yumejapaneseschool@gmail.com</p>
                 </div>
             </div>
 
             <div className="developer-details">
                 <h4>Devolopers</h4>
 
-                <div onClick={() => window.open("https://www.linkedin.com/in/pancham-sardar-6a466227b/", "_blank")}>
+                <div>
                     <img src="https://avatars.githubusercontent.com/u/139633470?v=4" alt="profile-img"></img>
-                    <p>Pancham Sardar</p>
+                    <p onClick={() => window.open("https://www.linkedin.com/in/pancham-sardar-6a466227b/", "_blank")}>Pancham Sardar</p>
                 </div>
 
-                <div onClick={() => window.open("https://www.linkedin.com/in/sayan-mondal-241929238/", "_blank")}>
+                <div>
                     <img src="https://avatars.githubusercontent.com/u/111787853?v=4" alt="profile-img"></img>
-                    <p>Sayan Mondol</p>
+                    <p onClick={() => window.open("https://www.linkedin.com/in/sayan-mondal-241929238/", "_blank")}>Sayan Mondol</p>
                 </div>
             </div>
 

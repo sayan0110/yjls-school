@@ -80,8 +80,8 @@
     margin-left: 8px;
 }
 
-.developer-details>div:hover,
-.detail:hover {
+.developer-details>div>p:hover ,
+.detail>p:hover {
     text-decoration: underline;
     cursor: pointer;
 }
