@@ -3,15 +3,18 @@
 import React from 'react';
 import './navmenu.css';
 
+import Menu from '../A_media/menu.png';
 import Logo from '../A_media/site-logo.jpg';
 
 const NavMenu = () => {
-    const showSidebar = () => {
+    const showSidebar = (event) => {
+        event.preventDefault();
         const sidebar = document.querySelector('.sidebar');
         sidebar.style.display = 'flex';
     };
 
-    const hideSidebar = () => {
+    const hideSidebar = (event) => {
+        event.preventDefault();
         const sidebar = document.querySelector('.sidebar');
         sidebar.style.display = 'none';
     };
@@ -20,7 +23,9 @@ const NavMenu = () => {
         <div>
             <nav>
                 <ul className="sidebar">
-                    <li onClick={hideSidebar}><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" /></svg></a></li>
+                    <li onClick={hideSidebar}><a href="">
+                        <img src={Menu} alt="menu"></img>
+                    </a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Courses</a></li>
                     <li><a href="">Why Us</a></li>
@@ -29,7 +34,7 @@ const NavMenu = () => {
                 </ul>
                 <ul>
                     <li className="site-name">
-                        <img className="logo" src={Logo} alt='logo'></img>
+                        <img className="site-logo" src={Logo} alt='logo'></img>
                         <a href="">Yume Japanese Language School</a>
                     </li>
                     <li className="hideOnMobile"><a href="">About</a></li>

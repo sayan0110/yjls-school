@@ -19,7 +19,7 @@ nav ul {
 }
 
 .contactUs-navTab {
-    margin-right: 50px;
+    padding-right: 50px;
 }
 
 .site-name {
@@ -28,12 +28,11 @@ nav ul {
     align-items: center;
 }
 
-.logo {
+.site-logo {
     display: flex;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    margin-left: 50px;
 }
 
 nav li {
@@ -86,7 +85,6 @@ nav li:first-child {
     display: none;
 }
 
-/* Media Queries for Mobile Responsiveness */
 
 @media(max-width: 800px) {
     .hideOnMobile {
@@ -97,23 +95,37 @@ nav li:first-child {
         display: block;
     }
 
-    /* Adjustments for smaller screens */
     .logo {
-        margin-left: 20px;
-        /* Adjusted margin for logo */
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav a {
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    .logo {
+        margin-left: 30px;
     }
 }
 
 @media(max-width: 400px) {
+
     .sidebar {
-        width: 100%;
+        width: 50%;
+        height: 100%;
+        position: fixed;
     }
 
-    /* Additional adjustments for smaller screens */
     nav a {
         padding: 0 10px;
-        /* Decreased padding for smaller screens */
-        font-size: 14px;
-        /* Decreased font size for smaller screens */
+        font-size: 13px;
+    }
+
+    .logo {
+        margin-left: 10px;
     }
 }

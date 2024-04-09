@@ -27,7 +27,7 @@
 .quick-details p,
 .developer-details p {
     font-size: clamp(10px, 4vw, 13px);
-    line-height: 1.2;
+    line-height: 1.3;
     color: rgba(0, 0, 0, 0.8);
     text-align: start;
 }
@@ -113,19 +113,19 @@
 
     .about-school {
         padding-top: 40px;
-        padding-left: 50px;
+        padding-left: 35px;
         padding-right: 20px;
     }
 
     .quick-details {
         padding-top: 40px;
-        padding-left: 50px;
+        padding-left: 35px;
         padding-right: 20px;
     }
 
     .developer-details {
         padding-top: 40px;
-        padding-left: 50px;
+        padding-left: 35px;
         padding-right: 20px;
     }
 }

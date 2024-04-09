@@ -56,12 +56,12 @@ export default function Footer() {
                 <h4>Devolopers</h4>
 
                 <div onClick={() => window.open("https://www.linkedin.com/in/pancham-sardar-6a466227b/", "_blank")}>
-                    <img src="https://lh3.googleusercontent.com/a/ACg8ocJ4g-AroaXPQUpWEAWEtwvFGnNrz7RzLuuNDW4d9I33Vhy8Lf1s=s96-c-rg-br100" alt="profile-img"></img>
+                    <img src="https://avatars.githubusercontent.com/u/139633470?v=4" alt="profile-img"></img>
                     <p>Pancham Sardar</p>
                 </div>
 
                 <div onClick={() => window.open("https://www.linkedin.com/in/sayan-mondal-241929238/", "_blank")}>
-                    <img src="https://media.licdn.com/dms/image/D5603AQGwqLAuGJ8w-A/profile-displayphoto-shrink_800_800/0/1687842986093?e=1717632000&v=beta&t=ikbZISdl_GSKieqsIr3xnF8b5xXr5Eee7e_DK9FAAbg" alt="profile-img"></img>
+                    <img src="https://avatars.githubusercontent.com/u/111787853?v=4" alt="profile-img"></img>
                     <p>Sayan Mondol</p>
                 </div>
             </div>

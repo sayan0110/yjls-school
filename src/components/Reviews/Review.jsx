@@ -8,13 +8,13 @@ import { Slide } from 'react-awesome-reveal';
 let reviews = [
     {
         name: "Pancham Sardar",
-        img_url: "https://lh3.googleusercontent.com/a/ACg8ocJ4g-AroaXPQUpWEAWEtwvFGnNrz7RzLuuNDW4d9I33Vhy8Lf1s=s96-c-rg-br100",
+        img_url: "https://avatars.githubusercontent.com/u/139633470?v=4",
         stars: 5,
         disc: `Attending this Japanese language school was a fantastic decision due to its friendly environment and supportive staff, making it easy to connect with fellow students and practice speaking Japanese.It is great way to start my carrer.`
     },
     {
         name: "Sayan Mondol",
-        img_url: "https://media.licdn.com/dms/image/D5603AQGwqLAuGJ8w-A/profile-displayphoto-shrink_800_800/0/1687842986093?e=1717632000&v=beta&t=ikbZISdl_GSKieqsIr3xnF8b5xXr5Eee7e_DK9FAAbg",
+        img_url: "https://avatars.githubusercontent.com/u/111787853?v=4",
         stars: 5,
         disc: `While the curriculum's pace could be challenging at times, the personalized attention and immersive teaching style contributed to a transformative experience, helping me gain confidence in speaking and understanding Japanese.`
     },
@@ -122,12 +122,14 @@ const Container = styled.div`
         -webkit-text-fill-color: transparent;
         font-size: clamp(1rem, 4vw, 1.3rem);
         text-transform: capitalize;
+        margin-left: 5px;
     }
 
     .review-des{
         font-size: clamp(1rem, 4vw, 2rem);
         text-transform: capitalize;
         margin-top: 8px;
+        margin-left: 5px;
     }
 
     .slick-list, .slick-slider, .slick-track{

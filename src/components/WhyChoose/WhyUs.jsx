@@ -109,12 +109,14 @@ const Container = styled.div`
     -webkit-text-fill-color: transparent;
     font-size: clamp(1rem, 4vw, 1.3rem);
     text-transform: capitalize;
+    margin-left: 5px;
   }
 
   .wha-des{
     font-size: clamp(1rem, 4vw, 2rem);
     text-transform: capitalize;
     margin-top: 8px;
+    margin-left: 5px;
   }
 
   .wha-img {
