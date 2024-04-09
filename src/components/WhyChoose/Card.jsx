@@ -15,7 +15,7 @@ const Card = (props) => {
 export default Card;
 
 const Container = styled.div`
-    width: 100%;
+    width: auto;
     padding: 1rem;
     background: white;
     span{
