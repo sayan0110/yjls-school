@@ -3,8 +3,9 @@
 import React from 'react';
 import './navmenu.css';
 
-import Menu from '../A_media/menu.png';
 import Logo from '../A_media/site-logo.jpg';
+import Menu from '../A_media/menu.png';
+import CloseMenu from '../A_media/close-menu.png';
 
 const NavMenu = () => {
     const showSidebar = (event) => {
@@ -23,8 +24,8 @@ const NavMenu = () => {
         <div>
             <nav>
                 <ul className="sidebar">
-                    <li onClick={hideSidebar}><a href="">
-                        <img src={Menu} alt="menu"></img>
+                    <li className="close-menu" onClick={hideSidebar}><a href="">
+                        <img src={CloseMenu} alt="menu"></img>
                     </a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Courses</a></li>
@@ -43,7 +44,7 @@ const NavMenu = () => {
                     <li className="hideOnMobile"><a href="">Reviews</a></li>
                     <li className="hideOnMobile"><a className="contactUs-navTab" href="">Contact Us</a></li>
 
-                    <li className="menu-button" onClick={showSidebar}><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" /></svg></a></li>
+                    <li className="menu-button" onClick={showSidebar}><a href=""><img src={Menu} alt="menu"></img></a></li>
                 </ul>
             </nav>
         </div>

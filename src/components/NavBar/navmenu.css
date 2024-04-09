@@ -66,6 +66,10 @@ nav li:first-child {
     z-index: 10;
 }
 
+.close-menu {
+    padding-top: 10px;
+}
+
 .sidebar li {
     width: 100%;
 }
@@ -123,5 +127,9 @@ nav li:first-child {
         width: 1.6rem;
         height: 1.6rem;
         margin-left: 10px;
+    }
+
+    .menu-button {
+        margin-right: 10px;
     }
 }
