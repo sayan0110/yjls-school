@@ -38,15 +38,15 @@ export default function Footer() {
 
                 <div className="detail">
                     <LocationOnIcon />
-                    <p className="location-onClick" onClick={() => window.open("https://maps.app.goo.gl/Z2293XaPZV6DgQE96", "_blank")}>Mali Pukria, near IILDS Hospital, Rajpur Sonarpur, Kolkata, Mali Pukuria, West Bengal 700150</p>
+                    <p onClick={() => window.open("https://maps.app.goo.gl/Z2293XaPZV6DgQE96", "_blank")}>Mali Pukria, near IILDS Hospital, Rajpur Sonarpur, Kolkata, Mali Pukuria, West Bengal 700150</p>
                 </div>
 
-                <div className="detail">
+                <div className="detail" onClick={() => window.location.href = 'tel:8013072585'}>
                     <ContactsIcon />
                     <p>80130 72585</p>
                 </div>
 
-                <div className="detail">
+                <div className="detail" onClick={() => window.location.href = 'mailto:Yumejapaneseschool@gmail.com'}>
                     <EmailIcon />
                     <p>Yumejapaneseschool@gmail.com</p>
                 </div>

@@ -6,14 +6,12 @@ import './navmenu.css';
 import Logo from '../A_media/site-logo.jpg';
 
 const NavMenu = () => {
-    const showSidebar = (event) => {
-        event.preventDefault();
+    const showSidebar = () => {
         const sidebar = document.querySelector('.sidebar');
         sidebar.style.display = 'flex';
     };
 
-    const hideSidebar = (event) => {
-        event.preventDefault();
+    const hideSidebar = () => {
         const sidebar = document.querySelector('.sidebar');
         sidebar.style.display = 'none';
     };

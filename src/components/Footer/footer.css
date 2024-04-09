@@ -52,11 +52,14 @@
 
 @media (max-width: 768px) {
     .footer-section {
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
     }
 
     .footer-section>div {
-        flex-basis: 100%;
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -87,11 +90,11 @@
     font-size: 0.95rem;
     color: rgba(0, 0, 0, 0.8);
     margin-bottom: 8px;
-    cursor: pointer;
 }
 
 .developer-details>div:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .developer-details>div>img {
@@ -109,12 +112,12 @@
     display: flex;
 }
 
-.detail > p {
-    padding-top: 4px;
-    padding-left: 8px;
+.detail:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-.location-onClick:hover {
-    cursor: pointer;
-    text-decoration: underline;
+.detail>p {
+    padding-top: 4px;
+    padding-left: 8px;
 }
