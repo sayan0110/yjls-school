@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Slide } from 'react-awesome-reveal';
 import './course.css';
+// eslint-disable-next-line
 import Card from './Card-section/CourseCard';
 
 const Course = () => {
@@ -25,7 +26,7 @@ const Course = () => {
         <div className="tabbar-section">
             <Slide direction="down">
                 <span className="course">Courses</span>
-                <h1 className="course-des">what Certificates We Offer</h1>
+                <h1 className="course-des">Certificates We Offer</h1>
             </Slide>
             <div className="tabbar-container">
                 <div className="tab_box">

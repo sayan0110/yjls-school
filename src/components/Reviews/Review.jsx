@@ -20,7 +20,7 @@ let reviews = [
     },
     {
         name: "Jyotirmay Gayen",
-        img_url: "https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/300784210_108013728701892_9044260359287301210_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qBKsZcEuzY0Ab6pek2A&_nc_ht=scontent.fccu3-1.fna&oh=00_AfAlZ_u8eiOQlIbZPdiktyy_Fr8QFWF3kU75DcZzA8bXTA&oe=6614F5E3",
+        img_url: "https://scontent.fccu31-2.fna.fbcdn.net/v/t39.30808-6/300784210_108013728701892_9044260359287301210_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d1E_gsjpvowAb7EU6F_&_nc_ht=scontent.fccu31-2.fna&oh=00_AfDQYLf7Q8YvFncJhRTWdcentZhvPIU6YK9f9fulceGh1g&oe=661B1CE3",
         stars: 5,
         disc: `This Japanese language school offers an exceptional learning environment with small class sizes, personalized attention, and a well-structured curriculum, resulting in significant progress and confidence in Japanese proficiency.`
     },

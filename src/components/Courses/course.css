@@ -25,7 +25,6 @@
 .tabbar-container {
     background: white;
     margin: 0 auto;
-    /* width: 100%; */
     height: auto;
     padding: 30px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
@@ -33,7 +32,7 @@
 }
 
 .tab_box {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -109,4 +108,29 @@
     transition: all 0.1s ease-in-out;
     background-image: linear-gradient(to right, #ffd194, #d1913c);
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 800px) {
+    .tab_box {
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab_box .tab_btn {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .content_box {
+        padding: 20px;
+    }
+
+    .content_box .content h2 {
+        font-size: 20px;
+    }
+
+    .content_box .content p {
+        font-size: 14px;
+    }
 }
