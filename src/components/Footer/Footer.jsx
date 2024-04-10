@@ -10,6 +10,9 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import EmailIcon from '@mui/icons-material/Email';
 
+import Pancham from '../A_media/devoloper-profile/pancham.png';
+import Sayan from '../A_media/devoloper-profile/sayan.jpeg';
+
 export default function Footer() {
     return (
         <div className="footer-section">
@@ -56,12 +59,12 @@ export default function Footer() {
                 <h4>Devolopers</h4>
 
                 <div>
-                    <img src="https://avatars.githubusercontent.com/u/139633470?v=4" alt="profile-img"></img>
+                    <img src={Pancham} alt="profile-img"></img>
                     <p onClick={() => window.open("https://www.linkedin.com/in/pancham-sardar-6a466227b/", "_blank")}>Pancham Sardar</p>
                 </div>
 
                 <div>
-                    <img src="https://avatars.githubusercontent.com/u/111787853?v=4" alt="profile-img"></img>
+                    <img src={Sayan} alt="profile-img"></img>
                     <p onClick={() => window.open("https://www.linkedin.com/in/sayan-mondal-241929238/", "_blank")}>Sayan Mondol</p>
                 </div>
             </div>
