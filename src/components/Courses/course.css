@@ -32,23 +32,24 @@
 }
 
 .tab_box {
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 2px solid rgba(229, 229, 229);
-    font-size: 18px;
+    font-size: clamp(14px, 3vw, 18px);
     font-weight: 600;
     position: relative;
 }
 
 .tab_box .tab_btn {
-    font-size: 18px;
+    font-size: clamp(14px, 3vw, 18px);
     font-weight: 600;
     color: #919191;
     background: none;
     border: none;
-    padding: 18px;
+    padding: 15px;
     cursor: pointer;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .content_box {
-    padding: 30px;
+    padding: 20px;
 }
 
 .content_box .content {
@@ -99,7 +100,7 @@
 
 .line {
     position: absolute;
-    top: 62px;
+    top: 53px;
     left: 17px;
     width: 90px;
     height: 5px;
@@ -115,19 +116,6 @@
         padding: 5px;
         flex-direction: row;
         align-items: center;
-    }
-
-    .tab_box .tab_btn {
-        font-size: 14px;
-    }
-
-    .line {
-        margin-top: 10px;
-        width: 50px;
-    }
-
-    .content_box {
-        padding: 20px;
     }
 
     .content_box .content h2 {

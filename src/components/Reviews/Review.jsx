@@ -81,7 +81,7 @@ const Review = () => {
         <ReviewSlider item={item} key={i} />
     ))
     return (
-        <Container id='client'>
+        <Container id="reviews">
             <Slide direction="down">
                 <span className="review">Reviews</span>
                 <h1 className="review-des">what people says</h1>

@@ -1,11 +1,10 @@
 import React from "react";
-import './aboutus.css';
-
 import { Slide } from 'react-awesome-reveal';
+import './aboutus.css';
 
 export default function AboutUs() {
     return (
-        <div className="about-container">
+        <div className="about-container" id="about">
             <Slide direction="down">
                 <span className="about">About us</span>
                 <h1 className="about-des">who we are</h1>

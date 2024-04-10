@@ -23,7 +23,7 @@ const Course = () => {
     };
 
     return (
-        <div className="tabbar-section">
+        <div className="tabbar-section" id="courses">
             <Slide direction="down">
                 <span className="course">Courses</span>
                 <h1 className="course-des">Certificates We Offer</h1>

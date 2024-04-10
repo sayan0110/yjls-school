@@ -14,7 +14,7 @@ import Test from '../A_media/whyChooseUs_icons/test.png';
 
 const WhyUs = () => {
   return (
-    <Container id="service">
+    <Container id="whyus">
       <Slide direction="down">
         <span className="wha">Why Us</span>
         <h1 className="wha-des">Reason For Choosing</h1>
@@ -98,6 +98,7 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 3rem 0;
   margin-bottom: 0.5rem;
+  z-index: -1;
 
   @media (max-width: 840px) {
     width: 90%;
@@ -133,4 +134,5 @@ const Cards = styled.div`
   gap: 1rem;
   place-content: center;
   align-items: center;
+  z-index: -1;
 `
