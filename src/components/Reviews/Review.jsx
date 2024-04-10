@@ -13,7 +13,7 @@ let reviews = [
         disc: `Attending this Japanese language school was a fantastic decision due to its friendly environment and supportive staff, making it easy to connect with fellow students and practice speaking Japanese.It is great way to start my carrer.`
     },
     {
-        name: "Sayan Mondol",
+        name: "Sayan Mondal",
         img_url: "https://avatars.githubusercontent.com/u/111787853?v=4",
         stars: 5,
         disc: `While the curriculum's pace could be challenging at times, the personalized attention and immersive teaching style contributed to a transformative experience, helping me gain confidence in speaking and understanding Japanese.`
