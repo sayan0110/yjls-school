@@ -111,9 +111,9 @@
     -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 321px) {
     .tab_box {
-        width: 100%;
+        width: 80%;
         padding: 5px;
         flex-direction: row;
         align-items: center;
@@ -125,5 +125,9 @@
 
     .content_box .content p {
         font-size: 14px;
+    }
+
+    .line {
+        margin-top: 13px;
     }
 }

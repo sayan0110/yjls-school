@@ -1,8 +1,8 @@
 import React from 'react';
 import './course-card.css';
 
-import banner from '../A_media/course-media/course-banner-bg.png';
-import teacherProfile from '../A_media/course-media/teacher-profile.jpg';
+import banner from '../A_media/course-media/banner2.jpg';
+import teacherProfile from '../A_media/course-media/teacher-profile1.jpg';
 
 import CallIcon from '@mui/icons-material/Call';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';

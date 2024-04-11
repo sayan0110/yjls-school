@@ -4,11 +4,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './cardslider.css';
 
-import cardImage1 from '../A_media/cardImage1.jpg';
-import cardImage2 from '../A_media/cardImage2.jpg';
-import cardImage3 from '../A_media/cardImage3.jpg';
-import cardImage4 from '../A_media/cardImage4.jpg';
-import cardImage5 from '../A_media/cardImage5.jpg';
+import cardImage1 from '../A_media/card-slider-image/cardImage1.jpg';
+import cardImage2 from '../A_media/card-slider-image/cardImage2.jpg';
+import cardImage3 from '../A_media/card-slider-image/cardImage3.jpg';
+import cardImage4 from '../A_media/card-slider-image/cardImage4.jpg';
+import cardImage5 from '../A_media/card-slider-image/cardImage5.jpg';
+import cardImage6 from '../A_media/card-slider-image/cardImage6.jpg';
+import cardImage7 from '../A_media/card-slider-image/cardImage7.jpg';
+import cardImage8 from '../A_media/card-slider-image/cardImage8.jpg';
+import cardImage9 from '../A_media/card-slider-image/cardImage9.jpg';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -56,7 +60,36 @@ export default function CardSlider() {
         swipeToSlide: true,
         autoplay: true,
         autoplaySpeed: 4000,
-        pauseOnHover: true
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 990,
+                settings: {
+                    swipeToSlide: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    swipeToSlide: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 530,
+                settings: {
+                    swipeToSlide: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
@@ -80,6 +113,22 @@ export default function CardSlider() {
 
                 <div className="slider-card">
                     <img src={cardImage5} alt="cardImage"></img>
+                </div>
+
+                <div className="slider-card">
+                    <img src={cardImage6} alt="cardImage"></img>
+                </div>
+
+                <div className="slider-card">
+                    <img src={cardImage7} alt="cardImage"></img>
+                </div>
+
+                <div className="slider-card">
+                    <img src={cardImage8} alt="cardImage"></img>
+                </div>
+
+                <div className="slider-card">
+                    <img src={cardImage9} alt="cardImage"></img>
                 </div>
             </Slider>
         </div>
