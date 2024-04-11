@@ -107,11 +107,13 @@ nav li:first-child {
     nav a {
         padding: 0 15px;
         font-size: 14px;
+        letter-spacing: -0.3px;
     }
 
     .site-logo {
         width: 1.8rem;
         height: 1.8rem;
+        margin-top: 2.5px;
         margin-left: 20px;
     }
 }
@@ -124,8 +126,6 @@ nav li:first-child {
     }
 
     .site-logo {
-        width: 1.6rem;
-        height: 1.6rem;
         margin-left: 10px;
     }
 

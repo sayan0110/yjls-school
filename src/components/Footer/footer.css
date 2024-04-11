@@ -129,3 +129,31 @@
         padding-right: 20px;
     }
 }
+
+@media (max-width: 1178px) and (min-width: 992px) {
+
+    .developer-details {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 769px) {
+
+    .about-school {
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    .quick-details {
+        padding-top: 40px;
+        padding-left: 35px;
+        padding-right: 20px;
+    }
+
+    .developer-details {
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+}

@@ -91,12 +91,24 @@
 }
 
 @media (max-width: 768px) {
+    
     .class-btn {
         padding: 5px 50px 10px 2px;
     }
 
     .profile {
         transform: scale(0.9);
+    }
+
+    .card {
+        min-width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card .profile {
+        left: 25px;
+        transform: scale(0.8);
     }
 }
 
@@ -134,17 +146,4 @@
     border: 3px solid white;
     color: black;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
-}
-
-@media (max-width: 768px) {
-    .card {
-        min-width: 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .card .profile {
-        left: 25px;
-        transform: scale(0.8);
-    }
 }
