@@ -87,14 +87,10 @@
 .class-btn {
     display: flex;
     align-items: center;
-    padding-left: 2px;
+    /* padding-left: 2px; */
 }
 
 @media (max-width: 768px) {
-    
-    .class-btn {
-        padding: 5px 50px 10px 2px;
-    }
 
     .profile {
         transform: scale(0.9);
@@ -122,20 +118,68 @@
 .class-btn>button {
     color: darkgreen;
     background-color: rgba(255, 255, 255, 0.6);
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    border-radius: 30px;
+    border-radius: 50%;
     border: none;
-    width: 4.5rem;
-    height: 3rem;
     box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
     transition: all 0.2s ease;
 }
 
-.call-btn {
-    margin-left: 15px;
+@media (min-width: 441px) {
+
+    .class-btn {
+        padding: 5px 50px 10px 2px;
+    }
+
+    .class-btn>button {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .call-btn {
+        margin-left: 18px;
+    }
+}
+
+@media (max-width: 440px) and (min-width: 420px) {
+    .class-btn>button {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .call-btn {
+        margin-left: 8px;
+    }
+
+    .wapp-btn {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 400px) {
+    .class-btn>button {
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+
+    .class-btn>h5 {
+        font-size: 14px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .class-btn>button {
+        width: 3.3rem;
+        height: 2.5rem;
+    }
+
+    .class-btn {
+        padding: 0px 55px 10px 0px;
+    }
 }
 
 .wapp-btn {
