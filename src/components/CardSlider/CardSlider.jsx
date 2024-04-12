@@ -12,7 +12,6 @@ import cardImage5 from '../A_media/card-slider-image/cardImage5.jpg';
 import cardImage6 from '../A_media/card-slider-image/cardImage6.jpg';
 import cardImage7 from '../A_media/card-slider-image/cardImage7.jpg';
 import cardImage8 from '../A_media/card-slider-image/cardImage8.jpg';
-import cardImage9 from '../A_media/card-slider-image/cardImage9.jpg';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -59,7 +58,7 @@ export default function CardSlider() {
         prevArrow: <SamplePrevArrow />,
         swipeToSlide: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         pauseOnHover: true,
         responsive: [
             {
@@ -125,10 +124,6 @@ export default function CardSlider() {
 
                 <div className="slider-card">
                     <img src={cardImage8} alt="cardImage"></img>
-                </div>
-
-                <div className="slider-card">
-                    <img src={cardImage9} alt="cardImage"></img>
                 </div>
             </Slider>
         </div>

@@ -10,6 +10,7 @@ import Popup from "./components/Popup/Popup";
 import Popularity from "./components/Popularity/Popularity";
 import WhyUs from "./components/WhyChoose/WhyUs";
 import Footer from "./components/Footer/Footer";
+import Hall from "./components/Hall-of-fame/Hall";
 
 import Background from "./components/A_media/Background/site-bg1.jpg";
 
@@ -26,6 +27,8 @@ const App = () => {
       <Banner />
       <AboutUs />
       <CardSlider />
+      <div className="border-style"></div>
+      <Hall />
       <div className="border-style"></div>
       <Course />
       <div className="border-style"></div>
