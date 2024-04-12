@@ -4,22 +4,22 @@
     margin: auto;
     width: 80%;
     height: 50%;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .hall-container>img {
-    display: flex;
     margin: auto;
     background-color: transparent;
     width: 100%;
     margin-top: 20px;
     filter: brightness(95%);
+    object-fit: contain;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .hall-container>img {
-        transform: scale(1.1);
+        transform: scale(1.08);
     }
 }
 

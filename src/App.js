@@ -11,17 +11,27 @@ import Popularity from "./components/Popularity/Popularity";
 import WhyUs from "./components/WhyChoose/WhyUs";
 import Footer from "./components/Footer/Footer";
 import Hall from "./components/Hall-of-fame/Hall";
-
-import Background from "./components/A_media/Background/site-bg1.jpg";
-
 import "./app.css";
+
+import background from "./components/A_media/Background/site-bg1.jpg";
+import visaBanner from './components/A_media/visa.mp4';
+
+const Visa = () => {
+  return (
+    <div className="visa-section">
+      <video autoPlay loop muted className="visa-video">
+        <source src={visaBanner} type="video/mp4"/>
+      </video>
+    </div>
+  );
+}
 
 const App = () => {
   const year = new Date().getFullYear();
 
   return (
     <>
-      <img src={Background} alt="bg" className="bg-style" />
+      <img src={background} alt="bg" className="bg-style" />
       {/* <Popup /> */}
       <NavMenu />
       <Banner />
@@ -31,6 +41,8 @@ const App = () => {
       <Hall />
       <div className="border-style"></div>
       <Course />
+      <div className="border-style"></div>
+      <Visa />
       <div className="border-style"></div>
       <WhyUs />
       <div className="border-style"></div>

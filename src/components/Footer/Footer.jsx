@@ -46,7 +46,8 @@ export default function Footer() {
 
                 <div className="detail">
                     <ContactsIcon />
-                    <p onClick={() => window.location.href = 'tel:8013072585'}>80130 72585</p>
+                    <p onClick={() => window.location.href = 'tel:8013072585'}>80130 72585  |</p>
+                    <p onClick={() => window.location.href = 'tel:8777671272'}>87776 71272</p>
                 </div>
 
                 <div className="detail">

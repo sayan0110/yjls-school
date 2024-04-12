@@ -1,29 +1,25 @@
 import React from 'react';
 import './course-card.css';
-
-import banner from '../A_media/course-media/banner2.jpg';
-import teacherProfile from '../A_media/course-media/teacher-profile1.jpg';
-
 import CallIcon from '@mui/icons-material/Call';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
-const CourseCard = (props) => {
-  const { CourseName, Money } = props;
+import teacherProfile from '../A_media/course-media/teacher-profile1.jpg';
 
+const CourseCard = ({ bannerSrc, CourseName, Money, Time }) => {
   return (
     <div className="card-container">
       <figure className="card">
-        <img src={banner} alt="banner"></img>
+        <img src={bannerSrc} alt="banner"></img>
 
         <figcaption>
           <img src={teacherProfile} alt="profile-pic" className="profile" />
           <h2>Jyotirmay gayen<span>Japanese Teacher</span></h2>
 
           <div className="class-details">
-            <div style={{display: "flex"}}><h5>Course: </h5><span style={{padding: "3px"}}></span> {CourseName} </div>
-            <div style={{display: "flex"}}><h5>Mode: </h5><span style={{padding: "3px"}}></span> Online/Offline </div>
-            <div style={{display: "flex"}}><h5>Period: </h5><span style={{padding: "3px"}}></span> 1 Year </div>
-            <div style={{display: "flex"}}><h5>Price: </h5><span style={{padding: "3px"}}></span> <h6 style={{fontSize: "14px"}}> {Money} </h6></div>
+            <div style={{ display: "flex" }}><h5>Course: </h5><span style={{ padding: "3px" }}></span> {CourseName} </div>
+            <div style={{ display: "flex" }}><h5>Mode: </h5><span style={{ padding: "3px" }}></span> Online/Offline </div>
+            <div style={{ display: "flex" }}><h5>Period: </h5><span style={{ padding: "3px" }}></span> {Time} </div>
+            <div style={{ display: "flex" }}><h5>Price: </h5><span style={{ padding: "3px" }}></span> <h6 style={{ fontSize: "14px" }}> {Money} </h6></div>
           </div>
 
           <div className="class-btn">
@@ -38,7 +34,6 @@ const CourseCard = (props) => {
 
         </figcaption>
       </figure>
-
     </div>
   );
 }
