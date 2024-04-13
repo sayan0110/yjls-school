@@ -1,194 +1,180 @@
 .card-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: start;
-    align-items: start;
 }
 
 .card {
     position: relative;
     border: 2px solid whitesmoke;
-    min-width: 230px;
-    max-width: 315px;
-    width: 100%;
-    color: #ffffff;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
     text-align: left;
-    line-height: 1.4em;
-    border-radius: 30px;
-}
-
-.card img {
-    object-fit: cover;
-    width: 100%;
-    vertical-align: top;
-}
-
-.card figcaption {
+    line-height: 1.3em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
     background: linear-gradient(to bottom, white 0%, #D7D0D3 100%);
-    padding: 0 25px 25px 25px;
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: auto;
+    }
+}
+
+.card-bellow {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+
+.pro-banner {
     position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 20px;
 }
 
-.card figcaption:before {
-    position: absolute;
-    content: '';
-    bottom: 100%;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 55px 0 0 400px;
-    padding-bottom: 15px;
-    border-color: transparent transparent transparent #fff;
-}
-
-.card .profile {
-    margin-bottom: 20px;
+.profile-pic {
+    position: relative;
+    border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 100%;
-    left: 40px;
     z-index: 1;
-    width: 5rem;
-    height: 5rem;
-    opacity: 0.95;
     box-shadow: 0px 30px 220px -10px rgba(0, 0, 0, 0.6),
         0px 45px 26px 0px rgba(0, 0, 0, 0.14);
 }
 
-.card h2 {
-    padding-top: 5px;
-    font-weight: 500;
-    text-transform: capitalize;
+@media (min-width: 500px) {
+    .profile-pic {
+        width: 4rem;
+        height: 4rem;
+        top: -37px;
+        left: 20px;
+    }
+
+    .pro-name div {
+        font-size: 23px;
+    }
 }
 
-.card h2 span {
-    display: block;
-    font-size: 0.5em;
-    padding-left: 1px;
+@media (max-width: 500px) {
+    .profile-pic {
+        width: 3rem;
+        height: 3rem;
+        top: -28px;
+        left: 15px;
+    }
+
+    .pro-name div {
+        font-size: 21px;
+    }
+}
+
+.pro-name div {
+    font-weight: 500;
     text-transform: capitalize;
+    padding-bottom: 6px;
+}
+
+.card span {
+    font-weight: 100;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .class-details {
-    display: grid;
-    place-content: start start;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-weight: 300;
+    padding: 10px;
     letter-spacing: 0.5px;
-    line-height: 2rem;
-    margin-bottom: 20px;
+}
+
+.class-details div {
+    margin-bottom: 5px;
+}
+
+.class-details h5 {
+    font-size: 14px;
+    color: #333;
+}
+
+.class-details span {
+    display: flex;
+    place-content: start start;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-left: 10px;
 }
 
 .class-btn {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    /* padding-left: 2px; */
+    margin-left: 8px;
 }
 
-@media (max-width: 768px) {
-
-    .profile {
-        transform: scale(0.9);
-    }
-
-    .card {
-        min-width: 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .card .profile {
-        left: 25px;
-        transform: scale(0.8);
-    }
+.class-btn h5 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
 }
 
-.class-btn>h5 {
-    letter-spacing: 0.5px;
-    font-weight: 600;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-.class-btn>button {
-    color: darkgreen;
-    background-color: rgba(255, 255, 255, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+.call-btn,
+.wapp-btn {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    -webkit-text-fill-color: transparent;
+    color: #fff;
     border: none;
-    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
-    transition: all 0.2s ease;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.1s ease;
 }
 
-@media (min-width: 441px) {
-
-    .class-btn {
-        padding: 5px 50px 10px 2px;
-    }
-
-    .class-btn>button {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-
-    .call-btn {
-        margin-left: 18px;
-    }
-}
-
-@media (max-width: 440px) and (min-width: 420px) {
-    .class-btn>button {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    .call-btn {
-        margin-left: 8px;
-    }
+@media (min-width: 500px) {
 
     .wapp-btn {
+        margin-left: 25px;
         margin-right: 30px;
     }
 }
 
-@media (max-width: 420px) and (min-width: 400px) {
-    .class-btn>button {
-        width: 2.7rem;
-        height: 2.7rem;
-    }
+@media (max-width: 500px) {
 
-    .class-btn>h5 {
-        font-size: 14px;
-        padding-right: 10px;
-    }
-}
-
-@media (max-width: 400px) {
-
-    .class-btn>button {
-        width: 3.3rem;
-        height: 3rem;
-    }
-
-    .class-btn {
-        padding: 0px 55px 10px 0px;
+    .wapp-btn {
+        margin-left: 15px;
     }
 
     .call-btn {
-        margin-left: 15px;
+        margin-left: 7px;
     }
 }
 
-.wapp-btn {
-    margin-left: 10px;
+@media (max-width: 429px) {
+
+    .call-btn, .wapp-btn {
+        margin-top: 15px;
+    }
+
+    .wapp-btn {
+        margin-left: 20px;
+    }
+
+    .call-btn {
+        margin-left: 13px;
+    }
 }
 
-.class-btn>button:hover {
-    border: 3px solid white;
-    color: black;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+.call-btn:hover,
+.wapp-btn:hover {
+    transform: scale(0.9);
 }

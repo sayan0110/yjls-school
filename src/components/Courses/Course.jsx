@@ -45,24 +45,27 @@ const Course = () => {
                     <div className={`content ${activeTab === 0 ? 'active' : ''}`}>
                         <h2>CRASH COURSES</h2>
                         <p>A crash course in Japanese offers a rapid introduction to basic vocabulary, grammar, and conversation skills, providing a foundation for further learning.</p>
-                        <CourseCard
-                            CourseName={"POST ADVANCE COURSE"}
-                            Money={`INR 799`}
-                            Time={"3 Months"}
-                            bannerSrc={crashCourseBanner}
-                        />
-                        <CourseCard
-                            CourseName={"ADVANCE COURSE"}
-                            Money={`INR 899`}
-                            Time={"3 Months"}
-                            bannerSrc={crashCourseBanner}
-                        />
-                        <CourseCard
-                            CourseName={"CRASH COURSE FOR BEGINNER"}
-                            Money={`INR 999`}
-                            Time={"3 Months"}
-                            bannerSrc={crashCourseBanner}
-                        />
+
+                        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
+                            <CourseCard
+                                CourseName={"JAPANESE POST ADVANCE COURSE"}
+                                Money={`INR 799`}
+                                Time={"3 Months"}
+                                bannerSrc={crashCourseBanner}
+                            />
+                            <CourseCard
+                                CourseName={"JAPANESE ADVANCE COURSE"}
+                                Money={`INR 899`}
+                                Time={"3 Months"}
+                                bannerSrc={crashCourseBanner}
+                            />
+                            <CourseCard
+                                CourseName={"JAPANESE CRASH COURSE FOR BEGINNER"}
+                                Money={`INR 999`}
+                                Time={"3 Months"}
+                                bannerSrc={crashCourseBanner}
+                            />
+                        </div>
                     </div>
                     <div className={`content ${activeTab === 1 ? 'active' : ''}`}>
                         <h2>JLPT N5</h2>
