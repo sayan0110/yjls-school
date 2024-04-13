@@ -8,19 +8,19 @@ import { Slide } from 'react-awesome-reveal';
 let reviews = [
     {
         name: "Pancham Sardar",
-        img_url: "https://lh3.googleusercontent.com/a/ACg8ocJ4g-AroaXPQUpWEAWEtwvFGnNrz7RzLuuNDW4d9I33Vhy8Lf1s=s360-c-no",
+        img_url: "https://avatars.githubusercontent.com/u/139633470?v=4",
         stars: 5,
         disc: `Attending this Japanese language school was a fantastic decision due to its friendly environment and supportive staff, making it easy to connect with fellow students and practice speaking Japanese.It is great way to start my carrer.`
     },
     {
-        name: "Sayan Mondol",
-        img_url: "https://media.licdn.com/dms/image/D5603AQGwqLAuGJ8w-A/profile-displayphoto-shrink_800_800/0/1687842986093?e=1717632000&v=beta&t=ikbZISdl_GSKieqsIr3xnF8b5xXr5Eee7e_DK9FAAbg",
+        name: "Sayan Mondal",
+        img_url: "https://avatars.githubusercontent.com/u/111787853?v=4",
         stars: 5,
         disc: `While the curriculum's pace could be challenging at times, the personalized attention and immersive teaching style contributed to a transformative experience, helping me gain confidence in speaking and understanding Japanese.`
     },
     {
         name: "Jyotirmay Gayen",
-        img_url: "https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/300784210_108013728701892_9044260359287301210_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=qBKsZcEuzY0Ab6pek2A&_nc_ht=scontent.fccu3-1.fna&oh=00_AfAlZ_u8eiOQlIbZPdiktyy_Fr8QFWF3kU75DcZzA8bXTA&oe=6614F5E3",
+        img_url: "https://scontent.fccu31-2.fna.fbcdn.net/v/t39.30808-6/300784210_108013728701892_9044260359287301210_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d1E_gsjpvowAb7EU6F_&_nc_ht=scontent.fccu31-2.fna&oh=00_AfDQYLf7Q8YvFncJhRTWdcentZhvPIU6YK9f9fulceGh1g&oe=661B1CE3",
         stars: 5,
         disc: `This Japanese language school offers an exceptional learning environment with small class sizes, personalized attention, and a well-structured curriculum, resulting in significant progress and confidence in Japanese proficiency.`
     },
@@ -81,8 +81,8 @@ const Review = () => {
         <ReviewSlider item={item} key={i} />
     ))
     return (
-        <Container id='client'>
-            <Slide direction="left">
+        <Container id="reviews">
+            <Slide direction="down">
                 <span className="review">Reviews</span>
                 <h1 className="review-des">what people says</h1>
             </Slide>
@@ -91,10 +91,10 @@ const Review = () => {
                     {reviewDisc}
                 </Slider>
                 <Buttons>
-                    <button
+                    <button className="btn-slick"
                         onClick={() => arrowRef.current.slickPrev()}
                     ><IoIosArrowBack /></button>
-                    <button
+                    <button className="btn-slick"
                         onClick={() => arrowRef.current.slickNext()}
                     ><IoIosArrowForward /></button>
                 </Buttons>
@@ -110,6 +110,7 @@ const Container = styled.div`
     max-width: 1280px;
     margin: 0 auto;
     padding: 4rem 0;
+    margin-bottom: 30px;
 
     @media(max-width:840px){
         width: 90%;
@@ -117,15 +118,19 @@ const Container = styled.div`
 
     .review{
         font-weight: 600;
-        color: rgba(51, 51, 51, 0.95);
+        background-image: linear-gradient(to right, #ffd194, #d1913c);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-size: clamp(1rem, 4vw, 1.3rem);
         text-transform: capitalize;
+        margin-left: 5px;
     }
 
     .review-des{
         font-size: clamp(1rem, 4vw, 2rem);
         text-transform: capitalize;
         margin-top: 8px;
+        margin-left: 5px;
     }
 
     .slick-list, .slick-slider, .slick-track{
@@ -167,14 +172,14 @@ const Testimonials = styled.div`
 `
 const Buttons = styled.div`
     position: absolute;
-    right: 0.7rem;
+    right: 1rem;
     bottom: -2rem;
 
-    button{
+    .btn-slick{
         background-color: transparent;
-        margin-left: 0.5rem;
+        margin-left: 0.5em;
         border: none;
-        color: #D7D0D3;
+        color: rgba(51, 51, 51, 0.85);
         cursor: pointer;
         font-size: 1.1rem;
     }

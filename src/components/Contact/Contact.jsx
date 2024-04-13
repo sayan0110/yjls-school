@@ -10,7 +10,7 @@ const Contact = () => {
     <div className='side-image'>
         <img src={contact} alt="contact"/>
     </div>
-    <form action='https://formspree.io/f/xyyrbnkk' method='POST' className='contact-container' >
+    <form action='https://formspree.io/f/xyyrbnkk' method='POSTcontact' className='contact-container' >
         <h1>Contact us</h1>
         <input id='name' type="text" name="name" placeholder="Name" />
         <input id='email' type="email" name='email' placeholder='Email'/>

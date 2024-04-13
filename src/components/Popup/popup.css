@@ -3,67 +3,77 @@
   width: 100vw;
   position: fixed;
   display: grid;
-  /* align-items: center; */
-  /* justify-content: center; */
   place-content: center;
-  /* background-color: transparent; */
   backdrop-filter: blur(5px);
   z-index: 10000;
   background-color: rgba(61, 53, 53, 0.8);
   display: none;
+  background-color: rgba(0, 0, 0, 0.3);
 }
+
 .popups {
   display: none;
 }
+
 .popup.open {
   display: block;
 }
+
 .offers {
-  /* position: absolute; */
-  border: 2px solid black;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px solid white;
   padding: 3vw;
   height: 40vh;
   width: 40vw;
-  text-align: center;
-  background-color: rgb(233, 217, 166 , 0.9);
-  border-radius: 10px;
+  background-color: #D7D0D3;
+  border-radius: 15px;
 }
+
 .offers h4 {
   font-size: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 3vh;
+  background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .offers h1 {
   font-size: 3vw;
   margin-bottom: 1vw;
   line-height: 6vh;
   margin-bottom: 3.9vh;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .offers h3 {
   font-size: 1vw;
   margin-bottom: 3vh;
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.offers button {
+.offers .close-btn {
   position: absolute;
 }
-button {
-  /* position: absolute; */
-  /* font-size: 3vw; */
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+.close-btn {
   background: transparent;
   border: none;
   width: 4vw;
   height: 4vh;
   top: 0.4vh;
   left: 43.9vw;
-  /* font-weight: lighter; */
   cursor: pointer;
 }
-button > img {
+
+.close-btn>img {
   color: rgb(0, 0, 0);
   height: 4vh;
   position: absolute;
@@ -71,40 +81,48 @@ button > img {
   top: 25vh;
   left: 26.5vw;
 }
-button:hover {
+
+.close-btn:hover {
   background-color: red;
   color: black;
 }
+
 @media only screen and (max-width: 600px) {
   .popup {
     height: 100vh;
     width: 100vw;
   }
+
   .offers {
     height: 50vh;
     width: 70vw;
     padding: 5vw;
   }
+
   .offers h4 {
     font-size: 3vw;
     padding-top: 4vh;
   }
+
   .offers h1 {
     font-size: 7vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
   }
+
   .offers h3 {
     font-size: 3vw;
   }
-  button {
+
+  .close-btn {
     font-size: 7vw;
     left: 72vw;
     cursor: pointer;
     width: 5.5vw;
     font-weight: 500;
   }
-  button:hover {
+
+  .close-btn:hover {
     background-color: red;
   }
 }

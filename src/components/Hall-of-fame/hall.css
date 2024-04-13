@@ -1,0 +1,39 @@
+.hall-container {
+    display: grid;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.hall-container>img {
+    margin: auto;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 20px;
+    filter: brightness(90%);
+    object-fit: contain;
+}
+
+@media (max-width: 400px) {
+    .hall-container>img {
+        transform: scale(1.08);
+    }
+}
+
+.hall {
+    font-weight: 600;
+    background-image: linear-gradient(to right, #ffd194, #d1913c);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    text-transform: capitalize;
+}
+
+.hall-des {
+    font-size: clamp(1rem, 4vw, 2rem);
+    text-transform: capitalize;
+    margin-top: 8px;
+}

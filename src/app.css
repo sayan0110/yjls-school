@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.bg-style {
+    position: fixed;
+    opacity: 0.03;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -5;
+}
+
+.border-style {
+    display: flex;
+    align-items: center;
+    margin: 1px 0;
+    min-height: 1px;
+    background: linear-gradient(270deg, hsla(0, 0%, 100%, .05) -.13%, hsla(0, 0%, 88%, .05) 0, #e0e0e0 49.17%, hsla(0, 0%, 88%, .05));
+}
+
+.copy-right-style {
+    margin: auto;
+    width: 70%;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.h5-style {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #b7b7b7;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.p-style {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #b7b7b7;
+    line-height: 22px;
+}
+
+/* Scrollbar Styles */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* video banner css */
+
+.visa-section {
+    width: 40%;
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.visa-video {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1100px) {
+    .visa-section {
+        width: 80%;
+    }
+}
