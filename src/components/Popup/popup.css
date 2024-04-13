@@ -10,6 +10,7 @@
   backdrop-filter: blur(5px);
   z-index: 10000;
   background-color: rgba(61, 53, 53, 0.8);
+  display: none;
 }
 .popups {
   display: none;

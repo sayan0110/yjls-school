@@ -7,6 +7,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import Review from "./components/Reviews/Review";
 import Tabbar from "./components/Tabbar";
 import Popup from "./components/Popup/Popup";
+import Contact from "./components/Contact/Contact";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Tabbar />
       <WhyChooseUs />
       <Review />
+      <Contact/>
     </>
   );
 }
