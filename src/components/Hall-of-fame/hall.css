@@ -4,8 +4,30 @@
     margin: auto;
     width: 80%;
     height: 50%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+}
+
+@media (min-width: 500px) {
+    .hall-container {
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+
+    .hall-container>img {
+        filter: brightness(90%);
+    }
+}
+
+@media (max-width: 500px) {
+    .hall-container {
+        margin-top: 65px;
+        margin-bottom: 60px;
+    }
+
+    .hall-container>img {
+        filter: brightness(96%);
+        transform: scale(1.065);
+        padding-top: 5px;
+    }
 }
 
 .hall-container>img {
@@ -13,14 +35,7 @@
     background-color: transparent;
     width: 100%;
     margin-top: 20px;
-    filter: brightness(90%);
     object-fit: contain;
-}
-
-@media (max-width: 400px) {
-    .hall-container>img {
-        transform: scale(1.08);
-    }
 }
 
 .hall {

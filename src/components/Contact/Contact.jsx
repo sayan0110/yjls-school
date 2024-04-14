@@ -1,10 +1,8 @@
 import React from 'react'
-import contact from "../../A_media/contact.jpg";
+import contact from "../A_media/contact.jpg";
 import "./Contact.css";
-// import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  // const [state] = useForm("xyyrbnkk");
   return (
     <div className='main'>
     <div className='side-image'>

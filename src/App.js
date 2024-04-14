@@ -5,13 +5,11 @@ import AboutUs from "./components/About/AboutUs";
 import CardSlider from "./components/CardSlider/CardSlider";
 import Review from "./components/Reviews/Review";
 import Course from "./components/Courses/Course";
-// eslint-disable-next-line
-import Popup from "./components/Popup/Popup";
-import Contact from "./components/Contact/Contact";
 import Popularity from "./components/Popularity/Popularity";
 import WhyUs from "./components/WhyChoose/WhyUs";
 import Footer from "./components/Footer/Footer";
 import Hall from "./components/Hall-of-fame/Hall";
+import Contactme from "./components/Contact-me/Contactme";
 import "./app.css";
 
 import background from "./components/A_media/Background/site-bg1.jpg";
@@ -33,7 +31,6 @@ const App = () => {
   return (
     <>
       <img src={background} alt="bg" className="bg-style" />
-      {/* <Popup /> */}
       <NavMenu />
       <Banner />
       <AboutUs />
@@ -50,7 +47,8 @@ const App = () => {
       <Popularity />
       <div className="border-style"></div>
       <Review />
-      <Contact/>
+      <div className="border-style"></div>
+      <Contactme />
       <div className="border-style"></div>
       <Footer />
       <div className="border-style"></div>

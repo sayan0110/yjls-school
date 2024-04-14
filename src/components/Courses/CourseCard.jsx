@@ -1,7 +1,7 @@
 import React from 'react';
 import './course-card.css';
-import CallIcon from '@mui/icons-material/Call';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { MdCall } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 
 import teacherProfile from '../A_media/course-media/teacher-profile1.jpg';
 
@@ -31,10 +31,10 @@ const CourseCard = ({ bannerSrc, CourseName, Money, Time }) => {
             <h5>Book Now</h5>
             <div>
               <button className="call-btn" onClick={() => window.location.href = 'tel:8013072585'}>
-                <CallIcon />
+                <MdCall />
               </button>
               <button className="wapp-btn" onClick={() => window.open("https://api.whatsapp.com/send?phone=%2B918013072585&data_filter_required=ARBHHFtaUwdrkJ3LOSOjkrBPMiUVFJfMxVQnj8awZER3y_APKIxw-LNF3ZKPR5-dyDRBDznJ_3qk2BwOkpSYMiYj_fOA6eRe6YQq8IaANpJdU1HelnQyNjQBv6CcQc9gEivqCYjiN8lao7cH6Ay0ku23_Q&source=FB_Page&app=facebook&entry_point=page_cta", "_blank")}>
-                <WhatsAppIcon />
+                <FaWhatsapp />
               </button>
             </div>
           </div>

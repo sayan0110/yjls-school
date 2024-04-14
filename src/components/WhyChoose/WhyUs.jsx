@@ -96,7 +96,7 @@ const Container = styled.div`
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3.1rem 0;
   margin-bottom: 0.5rem;
   z-index: -1;
 
@@ -111,14 +111,14 @@ const Container = styled.div`
     -webkit-text-fill-color: transparent;
     font-size: clamp(1rem, 4vw, 1.3rem);
     text-transform: capitalize;
-    margin-left: 5px;
+    margin-left: 15px;
   }
 
   .wha-des{
     font-size: clamp(1rem, 4vw, 2rem);
     text-transform: capitalize;
     margin-top: 8px;
-    margin-left: 5px;
+    margin-left: 15px;
   }
 
   .wha-img {
