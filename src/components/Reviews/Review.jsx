@@ -7,28 +7,52 @@ import { Slide } from 'react-awesome-reveal';
 
 let reviews = [
     {
-        name: "Pancham Sardar",
-        img_url: "https://avatars.githubusercontent.com/u/139633470?v=4",
+        name: "Sumita Mondal",
+        img_url: "https://lh3.googleusercontent.com/a-/ALV-UjU9hGMLGr8r7pcpVzOBclOuwRbOOvt_1eOoKxt4vBDwgz1-_w=w75-h75-p-rp-mo-br100",
         stars: 5,
-        disc: `Attending this Japanese language school was a fantastic decision due to its friendly environment and supportive staff, making it easy to connect with fellow students and practice speaking Japanese.It is great way to start my carrer.`
+        disc: `Best Japanese School. This is the best school if you want to learn Japanese. So without wasting time get admitted immediately!! 🇮🇳❤️🇯🇵`
     },
     {
-        name: "Sayan Mondal",
-        img_url: "https://avatars.githubusercontent.com/u/111787853?v=4",
+        name: "Mahak Mala Saren",
+        img_url: "https://lh3.googleusercontent.com/a-/ALV-UjXmcv_xkMDnMk00WmnzSExLms0TYbj6Hqj6mBrrTFgKLG5g3MU=w75-h75-p-rp-mo-br100",
         stars: 5,
-        disc: `While the curriculum's pace could be challenging at times, the personalized attention and immersive teaching style contributed to a transformative experience, helping me gain confidence in speaking and understanding Japanese.`
+        disc: `The teacher teaches with a lot of care and patience and not only he teaches the students about the language but also talks about Japanese people , their lifestyle , cuisine , culture and a lot more things , through which we learn a lot about Japan . I am personally very grateful  that such a good Japanese teacher is there who teaches something so unique  . I highly recommend this place if you are willing to learn Japanese.`
     },
     {
-        name: "Jyotirmay Gayen",
-        img_url: "https://scontent.fccu31-2.fna.fbcdn.net/v/t39.30808-6/300784210_108013728701892_9044260359287301210_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d1E_gsjpvowAb7EU6F_&_nc_ht=scontent.fccu31-2.fna&oh=00_AfDQYLf7Q8YvFncJhRTWdcentZhvPIU6YK9f9fulceGh1g&oe=661B1CE3",
+        name: "Aitijhya Saha",
+        img_url: "https://lh3.googleusercontent.com/a/ACg8ocKBlaqwERhErR29RQwiJL-piMa6yN8m2mj70T7ofAfuBSGExw=w75-h75-p-rp-mo-ba2-br100",
         stars: 5,
-        disc: `This Japanese language school offers an exceptional learning environment with small class sizes, personalized attention, and a well-structured curriculum, resulting in significant progress and confidence in Japanese proficiency.`
+        disc: `Excellent school. The teachers are all very helpful, easy-going, cooperative  and patiently explain all our little doubts. A great place to learn Japanese while having fun.`
     },
     {
-        name: "Yamada Ichirou",
-        img_url: "https://i.pinimg.com/236x/2c/2f/6c/2c2f6c036c63482501f4fc611ae92309.jpg",
+        name: "Ramyani Das",
+        img_url: "https://lh3.googleusercontent.com/a-/ALV-UjVrOI7sLN59Ik8AKyVT5b94Wzz6HFRuYrFW1T33LaVquPVXw56a=w75-h75-p-rp-mo-br100",
         stars: 5,
-        disc: `The engaging classes and knowledgeable teachers at this Japanese language school fostered a rewarding learning experience, enhancing both language skills and cultural understanding in a supportive and immersive environment.`
+        disc: `Extremely patient teacher. He has taught me with a lot of enthusiasm and in an enjoyable environment.`
+    },
+    {
+        name: "Srayashi Ghosh",
+        img_url: "https://lh3.googleusercontent.com/a-/ALV-UjU7ISGxKX472GwGcW89YD41VYBnrxMIUizsktnaK7yY67t-_UI=w75-h75-p-rp-mo-br100",
+        stars: 5,
+        disc: `Amazing place to begin with learning Japanese language. With approachable and understanding teacher it becomes easy to learn and grasp a difficult language like Japanese. Highly recommended for all stages.`
+    },
+    {
+        name: "Anju Maheshwari Sarkhel",
+        img_url: "https://lh3.googleusercontent.com/a-/ALV-UjVWvLIW54AN6Mo74iu_xImJEZtl5jcu6A-FJCCb_9LlcVqzR1M=w75-h75-p-rp-mo-br100",
+        stars: 5,
+        disc: `Awesome place. Teachers are anazing and easy going . Definately recommended.`
+    },
+    {
+        name: "Bikram Mistry",
+        img_url: "https://lh3.googleusercontent.com/a/ACg8ocJYF5FZCnKpo5GMRlrTZZTRholUQX3EI3x_EpmQVxgyHppHvA=w75-h75-p-rp-mo-br100",
+        stars: 5,
+        disc: `Best language school.`
+    },
+    {
+        name: "mousumi sarkar",
+        img_url: "https://lh3.googleusercontent.com/a-/ALV-UjXXIT5mSQMPLmBCGVn-xQilDZYb_yV3OqzJ0rpgs6hN1WXeuqiLRA=w75-h75-p-rp-mo-br100",
+        stars: 5,
+        disc: `The teachers are really helpful.`
     },
 ]
 var settings = {
@@ -84,7 +108,7 @@ const Review = () => {
         <Container id="reviews">
             <Slide direction="down">
                 <span className="review">Reviews</span>
-                <h1 className="review-des">what people says</h1>
+                <h1 className="review-des">what people say</h1>
             </Slide>
             <Testimonials>
                 <Slider ref={arrowRef} {...settings}>

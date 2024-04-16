@@ -19,13 +19,13 @@ const WhyUs = () => {
         <span className="wha">Why Us</span>
         <h1 className="wha-des">Reason For Choosing</h1>
       </Slide>
+      
       <Cards>
-
         <Slide direction="left">
           <Card
             Icon={<img className="wha-img" src={Trainer} alt="Trainer" />}
             title={"Experienced Trainer"}
-            disc={`We have Pearson certified faculty members...`}
+            disc={`Certified faculty offer personalized guidance and industry insights.`}
           />
         </Slide>
 
@@ -33,7 +33,7 @@ const WhyUs = () => {
           <Card
             Icon={<img className="wha-img" src={Success} alt="Success" />}
             title={"Highest Success Rate"}
-            disc={`Students will get a sure-shot success with the high...`}
+            disc={`Proven approach ensures exceptional results in language proficiency tests.`}
           />
         </Slide>
 
@@ -41,7 +41,7 @@ const WhyUs = () => {
           <Card
             Icon={<img className="wha-img" src={Fees} alt="Fees" />}
             title={"Affordable Fees"}
-            disc={`We offer the best PTE and NAATI coaching classes...`}
+            disc={`Top-quality coaching at competitive rates, ensuring value for money.`}
           />
         </Slide>
 
@@ -49,7 +49,7 @@ const WhyUs = () => {
           <Card
             Icon={<img className="wha-img" src={Support} alt="Support" />}
             title={"Online Support"}
-            disc={`Our experts are always there to help the students through...`}
+            disc={`Get timely assistance and personalized feedback throughout your learning.`}
           />
         </Slide>
 
@@ -57,7 +57,7 @@ const WhyUs = () => {
           <Card
             Icon={<img className="wha-img" src={Practice} alt="Practice" />}
             title={"Questions to Practice"}
-            disc={`We give the students various exercises and practice...`}
+            disc={`Engage in challenging exercises to strengthen language skills.`}
           />
         </Slide>
 
@@ -65,7 +65,7 @@ const WhyUs = () => {
           <Card
             Icon={<img className="wha-img" src={Test} alt="Test" />}
             title={"Real Time Tests"}
-            disc={`We provide several mock tests for reading, listening...`}
+            disc={`Simulate real exam conditions to maximize performance.`}
           />
         </Slide>
 
@@ -73,7 +73,7 @@ const WhyUs = () => {
           <Card
             Icon={<img className="wha-img" src={Resource} alt="Resource" />}
             title={"Latest Resources"}
-            disc={`Making use of the latest technology, we provide...`}
+            disc={`Access cutting-edge learning materials for a dynamic educational experience.`}
           />
         </Slide>
 
@@ -81,11 +81,11 @@ const WhyUs = () => {
           <Card
             Icon={<img className="wha-img" src={Discussion} alt="Discussion" />}
             title={"Discussion Sessions"}
-            disc={`During the discussion sessions, Our experienced team...`}
+            disc={`Participate in interactive discussions to enhance critical thinking.`}
           />
         </Slide>
-
       </Cards>
+      
     </Container>
   );
 };
