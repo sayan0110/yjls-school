@@ -15,8 +15,10 @@ const Contactme = () => {
       </Slide>
       <div className="container">
         <div className="form">
+
           <Slide direction="left">
-            <form>
+            <form action='https://formspree.io/f/xyyrbnkk' method='POSTcontact'>
+
               <div className="name">
                 <span>
                   <CgProfile />
@@ -36,8 +38,10 @@ const Contactme = () => {
                 <textarea cols="30" rows="10" placeholder="Message.."></textarea>
               </div>
               <button>Submit</button>
+              
             </form>
           </Slide>
+
         </div>
       </div>
     </div>
