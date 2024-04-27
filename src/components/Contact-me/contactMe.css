@@ -68,7 +68,7 @@
     width: 100%;
     border: none;
     outline: none;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.8);
     background-color: transparent;
     padding: 1rem 0.5rem;
 }
