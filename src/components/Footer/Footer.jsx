@@ -66,11 +66,6 @@ export default function Footer() {
                 <h4>Devolopers</h4>
 
                 <div>
-                    <img src={Pancham} alt="profile-img"></img>
-                    <p onClick={() => window.open("https://www.linkedin.com/in/pancham-sardar-6a466227b/", "_blank")}>Pancham Sardar</p>
-                </div>
-
-                <div>
                     <img src={Sayan} alt="profile-img"></img>
                     <p onClick={() => window.open("https://www.linkedin.com/in/sayan-mondal-241929238/", "_blank")}>Sayan Mondal</p>
                 </div>
